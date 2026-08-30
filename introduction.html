@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Palácio do Deão - Quepem - Goa - India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { background: #C0C0C0; -webkit-font-smoothing: antialiased; }
+  a { color: #CE0000; }
+  a:hover { color: #9c0000; }
+  img { border: 0; }
+  @media (max-width: 880px) {
+    :root {
+      --head-wrap: wrap;
+      --logo-w: 100%;
+      --logo-just: center;
+      --logo-pad: 18px 0 8px;
+      --logo-img-w: 178px;
+      --photo-w: 100%;
+      --nav-w: 100%;
+      --nav-ar: auto;
+      --nav-bg: linear-gradient(to top left, rgba(206, 0, 0, 0) 49.9%, #CE0000 50%), linear-gradient(#CE0000, #CE0000);
+      --nav-bg-size: 100% 24.4vw, 100% calc(100% - 24.4vw);
+      --nav-bg-pos: bottom left, top left;
+      --nav-bg-color: transparent;
+      --nav-pad: 16px 6% calc(24.4vw + 4px);
+      --navlist-display: grid;
+      --navlist-cols: 1fr 1fr;
+      --row-bg: url(img/main_bg.gif);
+      --main-bg: none;
+      --content-bg-color: transparent;
+      --content-w: 100%;
+      --content-pad: 26px 6% 34px;
+      --col-gap: 26px;
+      --photo-h: auto;
+      --link-pad: 2px 0;
+      --rot-w: 0%;
+    }
+  }
+  @media (min-width: 551px) and (max-width: 880px) {
+    :root {
+      --navlist-cols: 1fr 1fr 1fr;
+      --nav-bg: none;
+      --nav-bg-color: #CE0000;
+      --nav-bg-size: auto;
+      --nav-bg-pos: top left;
+      --nav-pad: 20px 5% 22px;
+    }
+  }
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #C0C0C0; padding: 0 0 44px; font-family: 'Cormorant Infant', 'Cormorant Garamond', Georgia, serif;">
+
+  <div style="max-width: var(--shell, 1140px); margin: 0 auto;">
+
+    <div style="background: #FFFFFF; display: flex; flex-wrap: var(--head-wrap, nowrap); align-items: stretch;" data-screen-label="Header">
+      <a href="index.html" style="display: flex; align-items: flex-end; justify-content: var(--logo-just, flex-start); width: var(--logo-w, 23.5%); flex: 0 0 auto; padding: var(--logo-pad, 0);">
+        <img src="img/logo_hi.jpg" width="587" height="543" alt="Palácio do Deão - Quepem - Goa" style="display: inline-block; width: var(--logo-img-w, 100%); height: auto; vertical-align: bottom;">
+      </a>
+      <div style="width: var(--photo-w, 76.5%); flex: 1 1 auto; overflow: hidden;">
+        <img ref="{{ headerRef }}" src="header/03.jpg" width="535" height="190" alt="Palácio do Deão, Goa, India" style="display: block; width: 100%; height: var(--photo-h, 100%); object-fit: cover; object-position: center;">
+      </div>
+    </div>
+
+    <div style="display: flex; aspect-ratio: 740 / 21; background: #EFEFEF;">
+      <div style="flex: 0 0 var(--rot-w, 23.5%); background: #CE0000;"></div>
+      <div style="flex: 1 1 auto; background: #EFEFEF;"></div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: stretch; background-color: #FFFFFF; background-image: var(--row-bg, none); background-repeat: no-repeat; background-position: top left; background-size: 100% auto;">
+
+      <nav style="width: var(--nav-w, 23.5%); min-width: var(--nav-min, 205px); flex: 1 1 auto; aspect-ratio: var(--nav-ar, 205 / 612); background-color: var(--nav-bg-color, #FFFFFF); background-image: var(--nav-bg, url(img/menu_bg.gif)); background-repeat: no-repeat; background-position: var(--nav-bg-pos, top left); background-size: var(--nav-bg-size, 100% auto); font-size: var(--nav-size, clamp(17px, 1.5vw, 22px)); padding: var(--nav-pad, 1.9em 1em 2.6em 3.1em); box-sizing: border-box;" data-screen-label="Navigation">
+        <div style="display: var(--navlist-display, block); grid-template-columns: var(--navlist-cols, none); flex-wrap: wrap; column-gap: 1.7em; row-gap: 2px; line-height: 2; font-weight: 500; color: #FFFFFF;">
+          <a href="index.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Welcome Page</a>
+          <a href="introduction.html" style="display: block; color: #FFFFFF; text-decoration: none; font-weight: 700; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Introduction</a>
+          <a href="history.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">The History</a>
+          <a href="architecture.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Architecture</a>
+          <a href="aims.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Our Aims</a>
+          <a href="restoration.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">The Restoration</a>
+          <a href="owners.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">The Owners</a>
+          <a href="pictures.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Pictures</a>
+          <a href="contacts.html" style="display: block; color: #FFFFFF; text-decoration: none; padding: var(--link-pad, 0);" style-hover="text-decoration: underline;">Contacts</a>
+        </div>
+      </nav>
+
+      <div style="width: var(--content-w, 76.5%); min-width: var(--content-min, min(100%, 480px)); flex: 1 1 auto; box-sizing: border-box; background-color: var(--content-bg-color, #FFFFFF); background-image: var(--main-bg, url(img/main_bg.gif)); background-repeat: no-repeat; background-position: top left; background-size: 100% auto; font-size: var(--txt, clamp(18px, 1.6vw, 23px)); padding: var(--content-pad, 1.8em 1.9em 2.3em 2.1em); display: flex; flex-wrap: wrap; gap: var(--col-gap, 1.9em); align-items: flex-start;" data-screen-label="Introduction">
+
+        <div style="flex: 2 1 300px; line-height: 1.42; font-weight: 500; color: #000000; text-wrap: pretty; max-width: 62ch;">
+          <p style="margin: 0 0 1.5em;">The Palácio do Deão is situated, 14 km from Margao, on the banks of the wildly beautiful Kushavati River in the Taluka of Quepem.</p>
+          <p style="margin: 0 0 1.5em;">A Palatial house, it occupies 11,000 sq ft of floor area. It is built in an unusual style of architecture and has an interesting blend of Hindu and Portuguese cultures.</p>
+          <p style="margin: 0 0 1.5em;">Also outstanding are its lush gardens that have still managed to preserve their historical features and have, since old times, been known as the most beautiful pleasure gardens in Goa.</p>
+          <p style="margin: 0 0 1.5em;">The gardens, with features such as a pond, loggia, balustrades, vases, stone ornaments, and a belvedere tell us of a complex garden, unparallel in Goa.</p>
+          <p style="margin: 0 0 1.5em;">Quepem, part of the new conquests was incorporated in Goa along with the territories of Ponda, Zambaulim, Canacona, Paroda, Mulem and the Fortress of Cabo de Rama only in 1782, in an agreement signed between the Portuguese and the Rei of Sundem.</p>
+          <p style="margin: 0 0 1.5em;">The Palácio do Deão was built in 1787, by a Portuguese noble man, who was Dean of the Church and the Founder of Quepem town. The house situated on a hillock, faces the Church he built.</p>
+          <p style="margin: 0 0 1.5em;">He established, at his own expense, a public market, hospital, Church and other facilities for the benefit of the inhabitants, as inscribed on the pyramidal structure in the churchyard.</p>
+          <p style="margin: 0 0 1.5em;">The Deão, Jose Paulo, arrived in Goa in 1779 along with the Archbishop, Dom Frei de Santa Catarina, famously known as the barefooted friar, who died in the Palácio do Deão and whose mortal remains are in the Church of Quepem.</p>
+          <p style="margin: 0 0 1.5em;">On the death of Archbishop Manuel de S. Galdino, in absence of a new Archbishop, he governed the archdiocese from July 1831 up to 1835.</p>
+          <p style="margin: 0 0 1.5em;">In 1829, he presented the Palácio do Deão to the Viceroys of India-Portuguese, for their recreation, so that they may protect the estate and institutions he had founded. The Conde de Torres Novas (Antonio Vasconcelos Correia) and the Conde de Sarzedas (Bernado J. de Lorena) are some of the Viceroys who spent their holidays here.</p>
+          <p style="margin: 0 0 1.5em;">The Deão died on the 10th Jan. 1835, after spending 55 years in Goa, and is buried in the Se Cathedral in front of the altar of N. S. da Dores, the image of which has been transferred from His Palácio do Deão to the Se.</p>
+          <p style="margin: 0 0 1.5em;">It has been restored and opened for the public.</p>
+          <p style="margin: 0 0 1.5em;">With its rich history, unique architecture, art and artifacts, it is a showcase of Goan culture and tradition depicting the lifestyle of the past.</p>
+          <p style="margin: 0 0 1.5em;">Visitors can enjoy Indo-Portuguese cuisine on the belvedere, overlooking the Kushavati River.</p>
+          <p style="margin: 0;">Its extensive gardens and location on the banks of the river make it an interesting place to observe birds and other wildlife.</p>
+        </div>
+
+        <div style="flex: 1 1 210px; align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; gap: var(--col-gap, 1.9em);">
+          <a href="photos/Image33.jpg" target="_blank" style="display: block;">
+            <img src="photos/Image33.jpg" width="800" height="600" alt="Palácio do Deão – Quepem, Goa" style="display: block; width: 100%; height: auto;">
+          </a>
+          <a href="photos/Image13.jpg" target="_blank" style="display: block;">
+            <img src="photos/Image13.jpg" width="600" height="800" alt="Palácio do Deão – Quepem, Goa" style="display: block; width: 100%; height: auto;">
+          </a>
+          <a href="photos/Image10.jpg" target="_blank" style="display: block;">
+            <img src="photos/Image10.jpg" width="800" height="600" alt="Palácio do Deão – Quepem, Goa" style="display: block; width: 100%; height: auto;">
+          </a>
+          <a href="photos/Image12.jpg" target="_blank" style="display: block;">
+            <img src="photos/Image12.jpg" width="600" height="800" alt="Palácio do Deão – Quepem, Goa" style="display: block; width: 100%; height: auto;">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div style="padding: 1.9% 0 0 4px; font-size: var(--foot, clamp(15px, 1.15vw, 17px)); line-height: 1.6; color: #000000;">
+      <div style="font-weight: 700;"><span style="font-family: &quot;Times New Roman&quot;, Times, serif;">©</span>2026 Palácio do Deão - Quepem, Goa</div>
+      <div>Questions? We're here for you:&nbsp;<a href="contacts.html" class="scp0" style="color: rgb(255, 255, 255); text-decoration: none;">contact us</a></div>
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pageWidth&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1140,&quot;min&quot;:900,&quot;max&quot;:1500,&quot;step&quot;:20,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Desktop scale&quot;},&quot;textScale&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.85,&quot;max&quot;:1.4,&quot;step&quot;:0.05,&quot;unit&quot;:&quot;×&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Desktop scale&quot;},&quot;randomHeaderImage&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;}}">
+class Component extends DCLogic {
+  headerRef = React.createRef();
+
+  componentDidMount() {
+    this.apply();
+  }
+  componentDidUpdate() {
+    this.apply();
+  }
+
+  apply() {
+    const root = document.documentElement;
+    const w = this.props.pageWidth;
+    root.style.setProperty('--shell', (w ? w : 1140) + 'px');
+    const s = this.props.textScale;
+    if (s && s !== 1) root.style.setProperty('--txt', 'calc(clamp(18px, 1.6vw, 23px) * ' + s + ')');
+    else root.style.removeProperty('--txt');
+
+    if (this.props.randomHeaderImage !== false && this.headerRef.current && !this._picked) {
+      const n = 1 + Math.floor(Math.random() * 10);
+      this.headerRef.current.src = 'header/' + String(n).padStart(2, '0') + '.jpg';
+      this._picked = true;
+    }
+  }
+
+  renderVals() {
+    return { headerRef: this.headerRef };
+  }
+}
+</script>
+</body>
+</html>
