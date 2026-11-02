@@ -51,6 +51,12 @@
       --rot-w: 0%;
     }
   }
+  @media (max-width: 550px) {
+    :root {
+      --rtp-thumb: 100%;
+      --rtp-thumb-max: 100%;
+    }
+  }
   @media (min-width: 551px) and (max-width: 880px) {
     :root {
       --navlist-cols: 1fr 1fr 1fr;
@@ -98,6 +104,28 @@
       </nav>
 
       <div style="width: var(--content-w, 76.5%); min-width: var(--content-min, min(100%, 480px)); flex: 1 1 auto; box-sizing: border-box; background-color: var(--content-bg-color, #FFFFFF); background-image: var(--main-bg, url(img/main_bg.gif)); background-repeat: no-repeat; background-position: top left; background-size: 100% auto; font-size: var(--txt, clamp(18px, 1.6vw, 23px)); padding: var(--content-pad, 1.8em 1.9em 2.3em 2.1em); display: flex; flex-wrap: wrap; gap: var(--col-gap, 1.9em); align-items: flex-start;" data-screen-label="Welcome">
+
+        <a href="https://www.rtp.pt/play/p17143/e964363/visita-guiada" target="_blank" rel="noopener" style="flex: 1 1 100%; width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 1.1em; padding: 1.05em 1.25em; border: 1px solid rgba(206, 0, 0, 0.28); border-left: 5px solid #CE0000; background: rgba(206, 0, 0, 0.05); color: #000000; text-decoration: none;" style-hover="background: rgba(206, 0, 0, 0.1);" data-screen-label="RTP feature">
+
+          <span style="position: relative; display: block; flex: 1 1 var(--rtp-thumb, 215px); max-width: var(--rtp-thumb-max, 260px); align-self: flex-start;">
+            <img src="img/rtp-visita-guiada.jpg" width="400" height="225" alt="The Palácio do Deão gardens in the RTP2 programme Visita Guiada" style="display: block; width: 100%; height: auto;">
+            <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <svg viewBox="0 0 64 64" width="2.6em" height="2.6em" aria-hidden="true" style="filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.45));"><circle cx="32" cy="32" r="30" fill="rgba(206, 0, 0, 0.88)"/><path d="M26 21.5 44 32 26 42.5Z" fill="#FFFFFF"/></svg>
+            </span>
+          </span>
+
+          <span style="flex: 5 1 285px; display: block; line-height: 1.38;">
+            <span style="display: flex; align-items: center; gap: 0.55em; margin-bottom: 0.5em;">
+              <span style="display: inline-flex; background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.1); padding: 0.3em 0.5em;"><img src="img/rtp-logo.png" width="318" height="96" alt="RTP" style="display: block; width: auto; height: 0.86em;"></span>
+              <span style="font-size: 0.74em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #CE0000;">Portuguese national television</span>
+            </span>
+            <span style="display: block; font-weight: 700; margin-bottom: 0.4em;">RTP2 devoted an entire episode of <i>Visita Guiada</i> to the Palácio.</span>
+            <span style="display: block; font-size: 0.86em; margin-bottom: 0.5em;">Filmed in the house and its gardens, <i>Mestiçagens: Das Gentes à Gastronomia</i> follows five centuries of Indo-Portuguese exchange — all the way to the Goan-Portuguese cooking served at our table.</span>
+            <span style="display: block; font-weight: 700; color: #CE0000;">Watch the full episode on RTP Play&nbsp;→</span>
+            <span style="display: block; font-size: 0.76em; color: #4a4a4a;">40 min · in Portuguese · first broadcast 31 October 2026</span>
+          </span>
+
+        </a>
 
         <div style="flex: 2 1 300px; line-height: 1.42; font-weight: 500; color: #000000; text-wrap: pretty; max-width: 60ch;">
           <p style="margin: 0 0 1.5em;">This 213 years old mansion was built by a Portuguese noble man, who was the Dean of the Church, and founder of Quepem town.</p>
